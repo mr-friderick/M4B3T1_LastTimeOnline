@@ -1,7 +1,7 @@
 fun main() {
     val name = "Pavel"
 
-    val massage = howLongOnline(172801)
+    val massage = howLongOnline(660)
     println("$name $massage")
 }
 
@@ -28,7 +28,7 @@ fun timeString(time: Int, array: kotlin.Array<String>): String {
 
     return when {
         n2 == 1 && n1 != 11 -> array[0]
-        n2 in 2..4 -> array[1]
+        n2 in 2..4 && n1 !in 12..14 -> array[1]
         else -> array[2]
     }
 }
